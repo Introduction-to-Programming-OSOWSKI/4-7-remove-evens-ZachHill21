@@ -2,11 +2,11 @@ def removeEvens(k):
     newList = k 
     numPopped = 0
     for i in range(0,len(k)):
-        if newList[i-numPopped] % 2 == 0:
+        if newList[i-numPopped] % 2 == 0 and newList[i-numPopped]!=0:
             newList.pop(i- numPopped)
             numPopped = numPopped + 1
     return newList
 
 
 
-print (removeEvens([1,2,3,4,5,6,7,8]))
+print (removeEvens([0,0,2,2,4,10]))
